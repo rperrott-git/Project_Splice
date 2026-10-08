@@ -39,3 +39,24 @@ New experimental Python test harness and Excel summary created during design ses
 - In these simplified setups some aggressive builds win by removing shields while enemy monsters still survive; this is **expected** if a central lane is exposed. The presence of six hits alone does not prove a fair balance advantage.
 
 **IMPORTANT LIMITATIONS**: Fixed scripts (not intelligent decisions), 12 assigned monsters per team (within a 16-slot geometry), uneven comparative rosters, incomplete rules and status behavior, provisional damage/MP/buff values; random seeds do not imply comparable fair trials. The current routing for skills with special targets is not authoritative. Next milestone should test precisely defined special-skill trainer targeting, full skill targeting and status compatibility, equal-budget rosters, and side-policy optimization. **Do not tune elemental balance yet.**
+
+## Equal-roster & targeting experiment v0.4 — 2026-10-08
+
+**Runnable Python source** and CSVs were produced in the conversation (not committed to repo). v0.4 starts both sides with **identical twelve monsters, stats, skills and slots**, comparing only scripted elemental rotations. Swaps A/B assignments and repeats 24 seeds for each matchup = **336 runs** across seven comparisons.
+
+**Explicit targeting test rules** (PROTOTYPE interpretations, not all canonical): lane-targeted single-hit attacks prefer corresponding enemy lane and target unprotected fronts/rears; piercing prefers protected/unprotected rear; Execute seeks lowest absolute living eligible HP; Magma seeks greatest HP capacity; splash extends to neighboring positional lanes; row effects touch eligible front row; center-lane-aligned ordinary hits may strike trainer shields when both center monsters are down even if flank monsters survive. Execute, piercing, highest-HP and row-wide attacks do *not* auto-seek shields. Healing chooses most injured by fraction of HP. Status and resource effects resolve sequentially; DoT ticks once per full round.
+
+**Results (wins for first strategy / 48, 14 round cap):**
+- Water/Wind vs Fire-only: 0 wins, 0 draws.
+- Fire/Wind vs Fire-only: 48 wins, 0 draws.
+- Earth/Water vs Fire-only: 0 wins, 0 draws.
+- Fire/Earth vs Fire-only: 48 wins, 0 draws.
+- Water/Wind vs Earth/Water: 0 wins, 0 draws.
+- Fire/Wind vs Fire/Earth: 0 wins, **48 time-limit draws**.
+- Four-side cycle vs Fire-only: 48 wins, 0 draws.
+
+**Smoke tests:** center-lane breach; living front protecting rear; piercing reaching rear; Water-selected adjacent Wind move incurring 30% test MP surcharge. All passed in v0.4.
+
+**Interpretation:** Results are *not* relative elemental power rankings; the same fixed roster disproportionately suits some selected sides, many high-rank moves are equipped initially, scripted choices ignore HP/MP/opponent state, and the 24 seeds cannot resolve systematic roster/script bias. Time-limit results are not draws under final game rules. This prototype still has simplified passives, skill targeting edge cases, healing priorities, shields, and row/status interaction; **no changes to canonical combat balance justified yet**.
+
+**Next priority:** compare deliberately balanced element-specific team budgets across side-selection policies; choose viable reasonable policy controllers (e.g. threshold MP/HP-aware), verify shield routing through hand-authored microtests and improve skill-effects fidelity. Distinguish trainer from wild wins.
