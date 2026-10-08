@@ -161,3 +161,18 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Combat | Row-wide simultaneous target snapshot/damage resolution | Superseded | Sequential ordering replaces prior testing proposal |
 | Balance | Reassess Execute stacking and damage spikes under sequential retargeting | OPEN | Previous wasted-overkill constraint no longer applies |
 | Prototype | Update Godot code to implement sequential SPD ordering and dynamic targeting | TODO | Current prototype may not implement these latest rules |
+
+## Addendum — 2026-10-08: status-effect prototype
+| Area | Decision | Status | Notes |
+|---|---|---|---|
+| Status | Six prototype effects: Poison, Blind, Silence, Sleep, Heal Block, Mana Burn | Agreed | Strong niches rather than interchangeable disables |
+| Timing | Ongoing effects and duration advance once per **full round**, including inactive sides | Agreed | Immediate infliction still resolves during individual actions |
+| Stacking | Same-status reapplication refreshes, never stacks; **different statuses can coexist** | Agreed | No prohibition on inefficient Blind+Sleep builds |
+| Poison | Percentage of **maximum** HP per round | Agreed | Exact rate, boss adjustments OPEN |
+| Blind | Accuracy reduction; inexpensive/reliable relative to hard control | Agreed direction | Exact accuracy penalty, duration, MP cost OPEN |
+| Silence | Prevent MP skills, uses basic attack fallback | Agreed | Other costs and duration OPEN |
+| Sleep | Cannot act; still defends; first **direct** hit (including splash/cleave/pierce) auto-crits and wakes; DoT does not wake | Agreed | Crit multiplier and duration OPEN |
+| Heal Block | Strongly reduces rather than necessarily eliminates incoming healing | Agreed direction | 75% reduction is a test placeholder |
+| Mana Burn | Percentage max-MP drain each round; regen can still occur | Agreed direction | 10% is a test placeholder |
+| Status | No blanket status immunity for bosses assumed | Test preference | Tune effective resistances, potency and duration |
+| Next | Assign prototype moves to twelve mechanical starter monsters | Planned | Don't prematurely lock numeric values |
