@@ -22,3 +22,6 @@ First prototype: battle sandbox with placeholder creatures; next: splice preview
 
 ## Open
 Exact control layout, engine implementation details, roster size, length, accessibility, pricing, production timeline, final name. **Confirmed platforms: full game on Windows PC and Android**; Godot 4/GDScript is the current recommended engine (not yet formally committed). Plan shared gameplay logic, landscape mobile interface, touch controls, offline play and interruption-friendly saving. Steam Deck/Linux support is an optional future goal.
+
+## License-based formation growth — AGREED 2026-10-08
+Guild licenses increase the number of monsters the protagonist can command **and** maximum trainer shields. All 16 formation positions remain available at every license tier; choosing to concentrate creatures on only one or two sides is permitted. Examples of 3–5 starting monsters and ~10 shields at mastery are balance hypotheses, not final values. Deeper dungeons should naturally challenge single-element burst strategies through MP exhaustion, limited healing, and exposure from empty sides.
