@@ -66,3 +66,23 @@ A favorite early monster should be a viable long-term investment through thought
 - **Repeated reuse of the same archived DNA template has no diminishing returns initially**, pending balance testing. An optional future lever is a transparent diversity bonus or repetition penalty, but neither is currently adopted.
 - **Extraction inheritance model remains OPEN.** Compare (A) natural/evolved genetics only, (B) complete developed traits/refinements, and (C) story-unlocked progressive extraction. Do not treat any as the settled system; prototype before selecting. Preserve meaningful rewards for sacrificing developed specimens while watching for recursive donor amplification.
 - Generation-count milestones and displayed numerical thresholds discussed earlier were examples, **not approved requirements**. The evolution meter, rather than a mandatory number of splices, is the current design direction.
+
+## Stat potential and leveling — AGREED DIRECTION (2026-10-08)
+- HP, MP, ATK, WIS, SPD each have a numerical underlying growth potential, shown initially as broad letter grades **D < C < B < A < S**. Two specimens sharing a letter grade can have different hidden potential. Grade thresholds and formulas are unfinalized.
+- Starting level-1 stats receive **small grade-based differences** (illustrative S=20, A=15, not final); the greater distinction emerges from level-by-level growth. Evolution raises potential and therefore may improve both level-1 baseline and future growth.
+- The target grade spread is **moderate**, with most monsters retaining differentiated distributions even when evolved. Skills, passives and formation synergy should matter at least as much as raw grades; don't assume all-S is a normal endgame outcome.
+- Splicing grants **small nonnegative refinement to all five stats**, automatically based on donor genetic potential and diminishing gains at higher recipient potential. There is **no species-specific DNA absorption multiplier initially**. Donor potential and recipient current potential determine gains; mathematical values and universal potential ceiling remain provisional.
+- Evolution grants **larger, fixed bonuses specific to the selected evolutionary branch**, instead of simply improving whichever stats are already strongest. Potential must not be silently lost if the recipient is close to a cap; cap treatment remains OPEN.
+- The AI can progressively unlock more detailed analysis of numerical potential, allowing letter grades early and exact stats later; exact unlock progression remains a story/UI direction, not finalized.
+- A prototype refinement formula was proposed using a finite potential range and donor/recipient weighting; **do not treat the exact constants or grade ranges as final**.
+
+## XP, level resets, and hub recovery — AGREED 2026-10-08
+- Full battle XP is awarded to **every living monster currently assigned to the formation**, independent of participation in the selected elemental side. XP is **not split** among monsters as license capacity grows.
+- Monsters at 0 HP receive no XP; monsters in storage receive no passive XP (later training facilities are only a possibility).
+- **No catch-up XP multiplier** for low-level or newly spliced monsters. Earning the next splice through leveling should remain a meaningful part of the loop.
+- A consistent minimum level is required to splice a living recipient, regardless of species or generation (exact level and cap OPEN). Splicing is only available **at the town/hub**, never inside a dungeon.
+- Each splice resets the recipient to **level 1 with full HP and MP at its new level-1 maxima**. Returning to town automatically heals and revives monsters, so special resurrection prerequisites for hub splicing are unnecessary.
+- **Evolution-stage-dependent XP scaling** is a favored prototype direction: evolved monsters may require modestly more XP to regain splice eligibility. **Do not** increase XP costs simply because of repeated splices within the same evolution stage. All multipliers and target time-to-level remain OPEN.
+- Players are free to splice several or all assigned monsters together, accepting that a formation full of level-1 monsters will temporarily be weak; staggered splicing and using established monsters to protect developing ones should be viable strategies.
+- Natural recovery is achieved through formation planning, lower-level expeditions, and grade-based level-1 baseline stats—not accelerated catch-up XP.
+- OPEN: max level, benefit (if any) from leveling beyond minimum splice eligibility, actual experience rewards and curves, balance time in expeditions rather than raw XP alone.
