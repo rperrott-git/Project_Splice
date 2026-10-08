@@ -46,3 +46,11 @@ Must specify whether a previously spliced monster's inherited abilities and acqu
 
 ## Principle
 A favorite early monster should be a viable long-term investment through thoughtful splicing, while species specialization and finite skills/passive slots preserve choices. A monster can hold two skills per row (adjacent elements only), with deterministic skill use when an elemental side activates.
+
+## Guaranteed post-battle recruitment — AGREED 2026-10-08
+- In a wild battle (a single enemy side, at most six enemy monsters), defeat the enemy group and **select one of the defeated monsters to recruit with guaranteed success**.
+- No individual midcombat capture action, capture chance roll, rare-species hard lock, or need to keep a chosen target alive for recruitment.
+- Newly recruited monsters remain unsecured until a safe return to town; failure risks expedition discoveries, not previously banked monsters.
+- Boss progression upgrades the protagonist's **rare-monster attraction**, enriching wild encounter pools with rarer species, stronger species, and unusual variants of existing ones. No species must become unobtainable due to upgrading attraction.
+- Species rarity, variant rarity, and individual innate genetic quality are distinct concepts. Powerful or unusual donors can still arise from familiar species.
+- Specific rare egg exclusivity, attraction rates, recruitment choice UX and specimen preview are OPEN.
