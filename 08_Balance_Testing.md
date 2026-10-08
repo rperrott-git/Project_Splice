@@ -25,3 +25,17 @@ These do not establish balance rankings: starting rosters, level-like stats, MP 
 - Verify that side activation/corner resting, row initiative, and pierce/splash targeting reflect final intended design.
 - Test alternative rosters and fair baselines with paired seeded trials and meaningful win conditions; vary MP restoration and defensive buff strength.
 - Prototype adds *Siphoning Mist* (Mana Burn application) as a **33rd test skill**, not approved canonical content.
+
+## Full formation simulator v0.3 — 2026-10-08
+
+New experimental Python test harness and Excel summary created during design session.
+
+**Changes and coverage**
+- Fixed the v0.2 trainer-targeting issue: a lane-aligned attack may strike the trainer immediately when the opponent's **front and rear middle slots are both empty**, even when enemy flank monsters survive. This requires testing each target behavior more extensively and is not the only final shield-targeting rule.
+- Sequential SPD ordered actions, immediate KO/protection updates, basic sleep wake-up critical, Poison and Mana Burn full-round ticks.
+- Compared four scripted rotation patterns, four numerical settings (standard, weaker MP restoration, stronger MP restoration, stronger Ward), four fixed matchup compositions and 12 seeds: **768 total simulations**.
+- Specific validation assertions passed for breached-center trainer attacks, protected rear exclusion, and no automatic shield attack from a flank-aligned basic hit.
+- Case-specific base rotations under the standard numeric setting: Water/Wind vs Fire mean 6 rounds and 0 build shield hits; Fire/Wind vs Earth mean 8 rounds and 6 build shield hits; Earth/Water vs Fire mean 10 rounds and 0 build shield hits; Fire/Earth vs Water mean 5 rounds and 6 build shield hits.
+- In these simplified setups some aggressive builds win by removing shields while enemy monsters still survive; this is **expected** if a central lane is exposed. The presence of six hits alone does not prove a fair balance advantage.
+
+**IMPORTANT LIMITATIONS**: Fixed scripts (not intelligent decisions), 12 assigned monsters per team (within a 16-slot geometry), uneven comparative rosters, incomplete rules and status behavior, provisional damage/MP/buff values; random seeds do not imply comparable fair trials. The current routing for skills with special targets is not authoritative. Next milestone should test precisely defined special-skill trainer targeting, full skill targeting and status compatibility, equal-budget rosters, and side-policy optimization. **Do not tune elemental balance yet.**
