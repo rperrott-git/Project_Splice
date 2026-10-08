@@ -60,3 +60,23 @@ New experimental Python test harness and Excel summary created during design ses
 **Interpretation:** Results are *not* relative elemental power rankings; the same fixed roster disproportionately suits some selected sides, many high-rank moves are equipped initially, scripted choices ignore HP/MP/opponent state, and the 24 seeds cannot resolve systematic roster/script bias. Time-limit results are not draws under final game rules. This prototype still has simplified passives, skill targeting edge cases, healing priorities, shields, and row/status interaction; **no changes to canonical combat balance justified yet**.
 
 **Next priority:** compare deliberately balanced element-specific team budgets across side-selection policies; choose viable reasonable policy controllers (e.g. threshold MP/HP-aware), verify shield routing through hand-authored microtests and improve skill-effects fidelity. Distinguish trainer from wild wins.
+
+## Equal-budget, reactive-policy comparison v0.5 — 2026-10-08
+
+Created downloadable Python harness `project_splice_sim_v05.py` and CSV trial and budget outputs. These artifacts are prototypes, not canonical game implementation.
+
+**Methods:** four archetype squads (Fire/Wind, Water/Wind, Earth/Water, Fire/Earth), each with 16 occupied slots and role-specific creature assignments. Normalize **aggregate** HP, MP, ATK, WIS, SPD separately to closely matching totals while keeping individual species relative shapes. Test early (reduced stats and high-rank skills replaced with available C/D substitutes) and midgame (original skill assignment), 16 seeds both starting-side assignments, all six distinct pairings: **384 battles**. Side policy heuristically scores *currently affordable active skills, healing urgency, missing MP, status cleansing, active MP costs and resting needs*; policies restricted to the strategy's two elements. Eighteen-round cap. Note this is still not sophisticated planning.
+
+**Results (wins for first named team, out of 32 trials per pairing/tier; others win unless specified as time-limit cases):**
+| Matchup | Early first-team wins | Early time limits | Mid first-team wins | Mid time limits |
+|---|---:|---:|---:|---:|
+| Fire/Wind vs Water/Wind | 31 | 1 | 32 | 0 |
+| Fire/Wind vs Earth/Water | 2 | 10 | 0 | 0 |
+| Fire/Wind vs Fire/Earth | 6 | 23 | 0 | 32 |
+| Water/Wind vs Earth/Water | 0 | 0 | 0 | 0 |
+| Water/Wind vs Fire/Earth | 0 | 32 | 0 | 32 |
+| Earth/Water vs Fire/Earth | 32 | 0 | 32 | 0 |
+
+The normalized midgame stat budgets were all within about 3 points of each desired aggregate (HP 2320, MP 1640, ATK 640, WIS 630, SPD 525). Early totals within about 5 points of targets (HP 1600, MP 900, ATK 470, WIS 440, SPD 410). Unit assignments, innate passives, elemental availability, and move mixes still differ by archetype.
+
+**Findings and limitations:** Water/Wind underperforms in this fixed model; Earth/Water strongly performs, possibly due to mechanics, selected skills or heuristic choices. These are **not final judgments on elemental balance**. The test has simplified targeting, attack/status resistance, incomplete passives, limited skill families and no adaptive multi-turn lookahead. Equal aggregate stats are not equivalent tactical strength; high-tier loadout swaps are coarse. No changes to approved combat rules. Recommended next investigation: inspect action logs and missing move coverage, compare policy-only vs formation-only controls, then refine skill-cost healing/control values with paired experiments.
