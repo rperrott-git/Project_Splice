@@ -93,3 +93,20 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | DNA | No diminishing returns for reusing the same DNA donor initially | Agreed prototype rule | Leave as balancing lever for later |
 | DNA | What acquired refinements, skills, and passives survive extraction | OPEN | Compare natural-only, full, and progressive story-unlocked inheritance experimentally |
 | Open | Evolution thresholds, donor compatibility, base growth math, level/EXP economy | Unresolved | Define and simulate next |
+
+## Addendum — 2026-10-08: numerical stats and XP loop
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Stats | Hidden numerical growth potential within visible D/C/B/A/S bands | Agreed direction | Small gains even before grade changes; AI reveals analysis gradually |
+| Stats | Grade affects modest level-1 baseline and per-level growth | Agreed direction | Early stat differences small, developed growth meaningful |
+| Stats | Moderate grade differentiation; skills/passives remain at least as important | Agreed balance target | Avoid all-S homogenization |
+| DNA | Every splice gives small nonnegative automatic potential gains to all five stats, based on donor strengths | Agreed | Donor choice is primary decision, not manual stat assignment |
+| DNA | No species-specific absorption multipliers initially | Agreed prototype rule | Minimize opacity; use donor quality and diminishing recipient gains |
+| Evolution | Fixed, branch-specific potential bonuses | Agreed | Distinct evolved forms and predictable improvements |
+| XP | Full shared XP to all living formation monsters regardless of participation; no splitting | Agreed | Sixteen-monster management should remain practical |
+| XP | No XP to knocked-out or stored monsters | Agreed | Must be active in equipped formation and alive |
+| XP | No low-level catch-up XP | Agreed | Leveling between splices should take meaningful time |
+| Splicing | Hub-only, reset to level 1 with full HP/MP at new maxima | Agreed | No mid-dungeon splicing or extra healing chore |
+| Recovery | Hub return heals and revives monsters automatically | Agreed | Expedition endurance remains separate |
+| XP | Modest evolutionary-stage XP scaling, not per-generation scaling | Working direction | Test expedition minutes before committing multipliers |
+| Open | Level cap, XP curve, minimum splice level, benefit of extra levels, grade boundaries and refinement formula | Unresolved | Next design and simulation work |
