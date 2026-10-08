@@ -86,3 +86,11 @@ A favorite early monster should be a viable long-term investment through thought
 - Players are free to splice several or all assigned monsters together, accepting that a formation full of level-1 monsters will temporarily be weak; staggered splicing and using established monsters to protect developing ones should be viable strategies.
 - Natural recovery is achieved through formation planning, lower-level expeditions, and grade-based level-1 baseline stats—not accelerated catch-up XP.
 - OPEN: max level, benefit (if any) from leveling beyond minimum splice eligibility, actual experience rewards and curves, balance time in expeditions rather than raw XP alone.
+
+## Initial leveling simulation targets — AGREED WORKING VALUES (2026-10-08)
+- Prototype level cap **20** and uniform minimum splice level **15**; both adjustable based on tests.
+- Levels **16–20** give accelerated **temporary current-stat growth** (test **1.5–2x** ordinary per-level increases), creating a tradeoff between keeping a powerful current monster and splicing sooner.
+- Extra levels beyond 15 give **no additional permanent DNA refinement or evolution meter bonus** when spliced. At level 20, XP stops accumulating initially.
+- Target roughly **two fairly challenging, appropriate-level dungeon expeditions** for a living equipped monster to reach level 15, rather than instant catch-up. Actual expedition length, encounter rewards, XP curve and evolved-stage XP costs must be simulated.
+- Modest XP requirement increases by **evolutionary stage**, not accumulated splice count, remain provisional.
+- Next step: simulate base/evolved monsters over repeated level/reset/splice cycles to validate pacing, grade differentiation, and long-term stats.
