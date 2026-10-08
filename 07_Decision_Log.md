@@ -43,3 +43,15 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 5. Procedural dungeon design constraints and cost.
 6. Art pipeline and final engine selection (Godot 4 recommended); PC/Android interface and save/resume implementation.
 7. Full plot logic, protagonist identity, exact AI arc, finale.
+
+## Addendum — 2026-10-08: shields, formation freedom, narrative mirror
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Combat | Only fully collapsed **middle** front+rear lane exposes trainer shields | Agreed | Shared corners cannot make two elemental sides automatically fatal |
+| Combat | No temporary immunity after shield damage | Agreed | Balance with shield pool, not artificial hit caps |
+| Combat | Guild license raises monster capacity **and** maximum shields | Agreed | Scale survivability with combat roster |
+| Combat | All formation positions available from first license | Agreed | Empty sides and concentrated builds are valid player choices |
+| Combat | Early ~3–5 monsters; eventual ~10 shields | Working numbers | Tune in prototype; no committed tier table |
+| Combat | No dedicated DEF stat; layered protection with piercing/splash exceptions | Agreed direction | Keep stats simple, distinguish defensive skills |
+| Dungeon | Persistent trainer shields during expedition | Agreed direction | Sustained dungeon resource, restoration methods open |
+| Story | AI trains child in parallel with child training monsters, concealed until Human Splicing | Agreed | Reframes sincere encouragement rather than villainizing it |
