@@ -79,3 +79,17 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Progression | Bosses grant AI-linked rare monster attraction, unlocking uncommon forms and stronger species in encounter pools | Agreed direction | Expand encounter possibilities rather than raise capture odds |
 | Collection | Preserve availability of common species as new encounters unlock | Agreed direction | Maintain reliable access to targeted DNA donors |
 | Open | Loot-loss percentage, rare attraction rates, bait/scouting, exact variants/egg exclusivity | Unresolved | Requires design and playtests |
+
+## Addendum — 2026-10-08: evolution and DNA inheritance
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Progression | 2–3 major evolutions per monster family, increasingly demanding | Agreed direction | Meaningful long-term milestones; scope and counts may vary by family |
+| Progression | Evolution triggered during splicing; evolved form persists at level 1 afterward | Agreed | Evolution improves subsequent level-up growth |
+| Progression | Extraction has no minimum level; every splice has a consistent minimum level requirement | Agreed | Simple raising cycle; exact threshold open |
+| Progression | Visible evolution meter increases from each splice | Agreed direction | Intuitive progress and donor comparisons |
+| Progression | More evolved/complex and compatible donor DNA generally raises meter faster | Agreed direction | Reward exceptional archived specimens; exact formula open |
+| Progression | Evolved forms can improve innate stat growth grades | Agreed | The new level-1 monster grows stronger per level |
+| Progression | Limited branching evolution; player selects unlocked forms | Agreed direction | Customization without mandatory opaque requirements |
+| DNA | No diminishing returns for reusing the same DNA donor initially | Agreed prototype rule | Leave as balancing lever for later |
+| DNA | What acquired refinements, skills, and passives survive extraction | OPEN | Compare natural-only, full, and progressive story-unlocked inheritance experimentally |
+| Open | Evolution thresholds, donor compatibility, base growth math, level/EXP economy | Unresolved | Define and simulate next |
