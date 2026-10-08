@@ -67,3 +67,15 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Story | Early human augmentation is limited; final guardian unlocks full Human Splicing | Agreed | Prevents contradiction and strengthens tonal pivot |
 | Gameplay | Save-and-quit is independent of diegetic reconstruction | Design requirement | Mobile interruption must not count as defeat |
 | Open | After-betrayal Failsafe access, capture security, reconstruction details | Unresolved | Need future decisions |
+
+## Addendum — 2026-10-08: wild recruitment and attraction
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Combat | Wild battles use one enemy side, up to six enemies, victory by defeating the group | Agreed | Distinct from shield-based trainer battles |
+| Combat | KO removes monster from live fight; KO slot remains assigned at 0 HP afterward | Agreed | Clear gaps; formation can be rearranged freely between fights |
+| Collection | Choose exactly one defeated wild monster after victory; recruitment guaranteed | Agreed | No capture RNG or interruption of fast automatic combat |
+| Dungeon | Fresh captures and rare eggs are unsecured until safely recalled | Agreed | Meaningful risk/reward for deep expeditions; exact loss rule open |
+| Dungeon | Recall outside combat banks all expedition discoveries | Agreed | Retreat at any time, floor transitions may prompt choice |
+| Progression | Bosses grant AI-linked rare monster attraction, unlocking uncommon forms and stronger species in encounter pools | Agreed direction | Expand encounter possibilities rather than raise capture odds |
+| Collection | Preserve availability of common species as new encounters unlock | Agreed direction | Maintain reliable access to targeted DNA donors |
+| Open | Loot-loss percentage, rare attraction rates, bait/scouting, exact variants/egg exclusivity | Unresolved | Requires design and playtests |
