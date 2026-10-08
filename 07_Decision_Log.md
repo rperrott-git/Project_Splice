@@ -133,3 +133,11 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Ending | Only after last battle AI discloses that it could have permanently prevented reconstruction but never did | Agreed | Love despite strategic cost; don't reveal or foreshadow explicitly earlier |
 | Story | Child might be a war orphan | Possible / OPEN | Evocative backstory, not yet confirmed |
 | Postgame | Advanced elemental revisits + trainer gauntlet + small optional challenges | Direction / scope OPEN | Hybrid reuse of assets and collection-oriented longevity |
+
+## Addendum — 2026-10-08: ambiguous epilogue
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Ending | Child chooses to recreate an AI after defeating the original | Agreed | Mirrors AI's attempt to redesign humanity |
+| Ending | Never identify the traits the child changed or removed | Agreed | Keep autonomy, identity, and repeating-the-cycle interpretations open |
+| Ending / Postgame | Familiar AI presence returns; old laboratory becomes warm and lively again | Agreed direction | Emotionally comforting ending and functional postgame hub |
+| Ending | No forced ominous reveal or explanation of whether recreated AI is the original | Agreed | Ambiguity emerges through reflection, not a horror sting |
