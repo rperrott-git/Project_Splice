@@ -76,3 +76,30 @@ Poison (HP damage), Sleep (no acting), Blind (accuracy penalty), Silence (no MP-
 - Row actions should appear as one brisk coordinated sequence (quick successive motions), **not** twelve long individual cinematic turns.
 - The previous proposal to take one targeting snapshot for a whole row and simultaneously apply damage is **rejected for the first prototype**. Rebalance Execute skill power/MP if sequential retargeting makes it too dominant. Sequential healing naturally accounts for previously applied heals.
 - **Automatic targeting is skill-specific** (e.g. general/random, lane preference, Execute, penetration, splash); no manual target selection. Exact target heuristics, row-Speed aggregation, SPD tie handling and specific ability values remain OPEN.
+
+## Prototype status-effect rules — AGREED framework (2026-10-08)
+This section is the current source of truth for statuses, superseding earlier status brainstorming where it conflicts.
+
+**Shared rules**
+- Six initial statuses: Poison, Blind, Silence, Sleep, Heal Block, Mana Burn.
+- Ongoing status damage, resource loss and duration progress **once per complete combat round**, not on every row action. Effects persist even if the affected monster's elemental side is not active.
+- A successful repeat application of the same status **refreshes its duration and effect**; it never stacks multiple instances of itself. Different statuses **may coexist**, including overlapping or strategically redundant ones (e.g. Blind with Sleep). Players decide whether combinations are useful.
+- Status application and immediate effects happen when the individual skill resolves, within sequential SPD-sorted row actions. Incapacitated monsters still physically occupy formation slots and protect their rear partner.
+- Specific hit chances, durations, debuff percentages, cleanse effects, resistance and boss adjustments remain **PROVISIONAL** until tested.
+
+**Six statuses**
+| Status | Core behavior | Balancing intention |
+|---|---|---|
+| Poison | Deals a percentage of **target maximum HP** at end of each full round | Valuable against high-HP tanks; example 5%/round only |
+| Blind | Reduces accuracy of accuracy-dependent offensive abilities | Cheaper, more reliable, longer lasting than hard control; example 40–50% accuracy penalty only |
+| Silence | Prevents MP-consuming skill use; monster falls back to its free basic attack | Counters heals, casters and expensive skills without removing all actions |
+| Sleep | Cannot act while asleep; remains in formation protecting its lane. **First direct damaging hit is a guaranteed critical and wakes target immediately** | Either control or burst setup; applies to single-target, cleave, splash and piercing direct hits. Poison/other damage-over-time ticks **neither wake nor consume** the critical. Example crit modifier 1.5x only |
+| Heal Block | Greatly reduces incoming HP restoration, including healing, regeneration and lifesteal/drains when applicable | Counter to Water sustain rather than full denial; example **75% reduction** only |
+| Mana Burn | Drains a percentage of target maximum MP at end of each full round | Counter to Water/MP sustain and costly skill builds; example **10% max MP** only; passive/resting regen may still occur, with net effect determined by timing |
+
+**Tactical goals / balance cautions**
+- Blind should remain useful relative to Sleep and Silence via low MP cost, reliability, duration and/or damage-bearing application moves.
+- Sleep's guaranteed wake-up critical on **any direct damaging hit** creates a meaningful choice between preserving control and cashing out burst. Whether a sleeping unit awakened by an earlier attack still gets its already-pending action needs explicit testing/specification.
+- Reapplication refreshes, not stacks. Poison vs large bosses and repeated Sleep against bosses require resistance tuning rather than assumed blanket immunity.
+- Heal Block and Mana Burn give Wind/disruption builds ways to pressure Water's healing and MP recovery; cleansing abilities may give Water counterplay.
+- Initial status move candidates include Venom Fang, Dark/Blinding Gust, Sleeping Mist, and future dedicated Heal Block and Mana Burn moves. **Skill ranks, names, costs, exact targeting, and effect quantities not locked.**
