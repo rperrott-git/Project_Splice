@@ -94,3 +94,6 @@ A favorite early monster should be a viable long-term investment through thought
 - Target roughly **two fairly challenging, appropriate-level dungeon expeditions** for a living equipped monster to reach level 15, rather than instant catch-up. Actual expedition length, encounter rewards, XP curve and evolved-stage XP costs must be simulated.
 - Modest XP requirement increases by **evolutionary stage**, not accumulated splice count, remain provisional.
 - Next step: simulate base/evolved monsters over repeated level/reset/splice cycles to validate pacing, grade differentiation, and long-term stats.
+
+## Donor skill replacement tradeoffs — AGREED 2026-10-08
+Every splice must inherit **one of the donor's two active moves (front OR rear)**, even if the recipient primarily benefits from donor passive traits, genetic refinement or evolution progress. Moves at different ranks are independent—not automatic family upgrades. A player may deliberately replace a less useful front move to preserve an economical rear move on a rear-row specialist. Replacement still follows the four-slot, adjacent-element restrictions. Monitor whether forced move inheritance becomes cumbersome in later generations; no no-move option currently adopted.
