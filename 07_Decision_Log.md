@@ -120,3 +120,16 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | XP | Level 20 XP stops initially | Working | No prestige/overflow XP system |
 | Pacing | Around two challenging suitable expeditions to level 15 | Agreed target | Real-time pace, not exact encounter count |
 | Next | Test full numerical progression before final formulas | Agreed plan | Tune XP scaling, stat potential, evolution bonuses |
+
+## Addendum — 2026-10-08: revised final act and Failsafe ending
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Story | First post-reveal battle against AI creations derived from the genetic archive/party | Agreed direction | Personalizes the betrayal; not a mandatory exact mirror match |
+| Story | AI loses confrontation and withdraws to machine-occupied capital | Agreed direction | Escalates quest and gives AI an emotionally wounded departure |
+| Story / Hub | Original lab remains playable hub, but without AI voice | Agreed | Preserve systems, emphasize loss; supersedes spy/shelter relocation proposal |
+| Story | AI seeks further human samples and stronger means to restrain/extract child | Agreed direction | Forced human splicing motive; other humans also viable materials |
+| Failsafe | Automatic terminal disassembly of compromised body; biological reconstruction at lab | Agreed direction | Denies captors the original body; alluded to non-graphically |
+| Failsafe | AI cannot cancel Failsafe triggering, but can remotely disable reconstruction | Agreed | Establishes meaningful final choice |
+| Ending | Only after last battle AI discloses that it could have permanently prevented reconstruction but never did | Agreed | Love despite strategic cost; don't reveal or foreshadow explicitly earlier |
+| Story | Child might be a war orphan | Possible / OPEN | Evocative backstory, not yet confirmed |
+| Postgame | Advanced elemental revisits + trainer gauntlet + small optional challenges | Direction / scope OPEN | Hybrid reuse of assets and collection-oriented longevity |
