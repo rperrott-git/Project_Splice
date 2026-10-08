@@ -59,3 +59,11 @@ Poison (HP damage), Sleep (no acting), Blind (accuracy penalty), Silence (no MP-
 - Specializing heavily in one element is permitted rather than prevented by composition limits. Weaknesses include low access to other elemental functions, diminished opportunities for inactive MP recovery, and vulnerability when an unprotected side is selected. Playtest whether these costs are sufficient.
 - **Shield persistence between dungeon encounters** is the preferred direction agreed for design; recovery facilities, items, and details remain open.
 - The basic stat prototype retains HP/MP/ATK/WIS/SPD without dedicated DEF (agreed direction); physical/magical formulas are untested. Full frontline protection with piercing/splash exceptions is the agreed direction.
+
+## Skill rank and independent abilities — AGREED 2026-10-08
+- Every skill rank is a **distinct active move**, not an automatic upgrade of a family. Replacing a cheaper move with a higher-ranked one is a conscious donor/inheritance tradeoff.
+- Higher-ranked skills generally offer more immediate power or unique effects for substantially higher MP costs; inexpensive lower-ranked abilities remain desirable for expedition endurance. Exact rank bands, MP costs and damage formulas are OPEN.
+- **ATK-scaling and WIS-scaling skills exist in both front and rear rows across all four elements**; element defines tactical emphasis rather than forbidding offensive or physical roles. Water retains real offensive abilities, alongside restoration.
+- Each element has characteristic tactical effects (Fire offense, Water restoration, Wind disruption, Earth defense/buffs), but should not be restricted to those effects exclusively.
+- Skill **rank** (potency/expense) and **rarity** (acquisition difficulty) are distinct. Unusual effects such as percentage-HP damage, Execute or special area interactions may be separate ranked moves, not necessarily direct upgrades of basic attacks.
+- Keep the existing one-active-skill-per-row-action, deterministic elemental selection and no individual battle commands. Skill library names/values and rank distribution are still to design.
