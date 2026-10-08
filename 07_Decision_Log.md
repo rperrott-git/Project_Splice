@@ -110,3 +110,13 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Recovery | Hub return heals and revives monsters automatically | Agreed | Expedition endurance remains separate |
 | XP | Modest evolutionary-stage XP scaling, not per-generation scaling | Working direction | Test expedition minutes before committing multipliers |
 | Open | Level cap, XP curve, minimum splice level, benefit of extra levels, grade boundaries and refinement formula | Unresolved | Next design and simulation work |
+
+## Addendum — 2026-10-08: initial progression test targets
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Levels | Max 20; splice eligibility at level 15 | Working agreed test values | Revisit after modeling expeditions |
+| Levels | 16–20 grant greater **current combat stat** gains (test 1.5–2x) | Agreed direction; magnitude OPEN | Keep-level-20 vs splice-at-15 choice |
+| Splicing | No permanent refinement bonus for waiting past level 15 | Agreed direction | Avoid forcing max level before each splice |
+| XP | Level 20 XP stops initially | Working | No prestige/overflow XP system |
+| Pacing | Around two challenging suitable expeditions to level 15 | Agreed target | Real-time pace, not exact encounter count |
+| Next | Test full numerical progression before final formulas | Agreed plan | Tune XP scaling, stat potential, evolution bonuses |
