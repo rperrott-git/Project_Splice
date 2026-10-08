@@ -33,3 +33,12 @@ Top-down vs three-quarter traversal; region interconnectedness; exact procedural
 - The player's long-term monsters, already archived DNA and established progression are not permanently destroyed by defeat. Whether **newly captured** monsters count as unsecured loot remains OPEN.
 - Saving and quitting the real game, especially on Android, must remain independent of in-world defeat mechanics: close/resume should not count as losing an expedition.
 - **OPEN:** narrative and mechanical rules for how the Failsafe works after the AI turns against the protagonist; exact loss/retention rules, costs, and checkpoints.
+
+## Wild recruitment and encounter progression — AGREED 2026-10-08
+- A successful wild encounter ends when the enemy group is defeated; the player then **chooses one monster from that defeated group to recruit, guaranteed**. This avoids midcombat capture timing, chance failure, and extra action commands.
+- All encountered wild species, including rare ones, are eligible for the guaranteed post-battle choice; no hard recruitment lock or hidden rare-capture failure chance.
+- Newly recruited monsters are **unsecured expedition rewards** until the protagonist Recalls safely to town, like rare eggs and dungeon loot. Defeat can cause loss of unsecured recruits; exact defeat-loss scope/rate remains OPEN.
+- As elemental bosses are defeated, the protagonist gains AI-enabled **rare monster attraction** progression. Encounter pools expand to include rarer species, variants of existing creatures, and stronger possible species, including in familiar regions. Existing common species should remain findable.
+- Exact attraction rates, region/depth modifiers, boss-by-boss unlock schedule, and whether consumable bait/scouting can target particular species remain OPEN. Example percentages from discussions were illustrative, not approved rates.
+- Recruitment and rare eggs serve complementary roles: ordinary encounters provide reliable new specimens and potential DNA donors; eggs should remain exciting discoveries, especially for unusual variants/genetic possibilities. Avoid making one source completely obsolete.
+- Voluntary Recall outside combat banks all expedition rewards; losing a dungeon expedition risks unsecured eggs, captures and loot while preserving previously banked monsters and DNA.
