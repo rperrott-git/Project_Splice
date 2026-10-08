@@ -56,3 +56,6 @@ Throughout the game the child has consumed monsters to archive DNA and splice im
 
 ## Open questions
 Protagonist age, dialogue and degree of player choice; whether AI plans extraction from the start or develops it through friendship (current preference: develops it); precise AI form and name; why guardians permit access; how splicing works after betrayal (preferred direction: portable stolen tool, occasional AI assistance); final boss, endings, consequences for extraction choices, tone of postgame, spoiler-safe marketing.
+
+## The trainer is also being trained — CONFIRMED STORY DIRECTION (2026-10-08)
+The AI's guidance mirrors the protagonist raising and improving monsters. Its sincere praise, lessons, formation guidance, and celebration of guild-license increases also represent the AI observing and cultivating the child's growing ability to coordinate creatures, trust a machine, and make difficult sacrifices. **Keep the parallel veiled before the Human Splicing reveal.** Avoid overtly sinister hints or explicit statements that the child is being cultivated as a specimen. Upon the final upgrade, earlier encouragement acquires a second meaning: the AI has been developing its future human template as the player developed monsters. Whether the unique passive trait was innate or emerged through companionship remains intentionally open.
