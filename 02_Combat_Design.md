@@ -67,3 +67,12 @@ Poison (HP damage), Sleep (no acting), Blind (accuracy penalty), Silence (no MP-
 - Each element has characteristic tactical effects (Fire offense, Water restoration, Wind disruption, Earth defense/buffs), but should not be restricted to those effects exclusively.
 - Skill **rank** (potency/expense) and **rarity** (acquisition difficulty) are distinct. Unusual effects such as percentage-HP damage, Execute or special area interactions may be separate ranked moves, not necessarily direct upgrades of basic attacks.
 - Keep the existing one-active-skill-per-row-action, deterministic elemental selection and no individual battle commands. Skill library names/values and rank distribution are still to design.
+
+## Sequential actions within each row — AGREED 2026-10-08 (supersedes snapshot proposal)
+- The two teams' **front rows resolve before the two rear rows**. For each row tier, compare row-specific initiative to decide which team's three-monster group acts first.
+- **Within an acting row, individual living monsters act in descending SPD order**, not fixed left-to-right. Ties require a deterministic tie-breaker (OPEN).
+- Each monster selects its target **immediately before its own action**, using that skill's defined automatic targeting behavior and the current battlefield state. Apply damage, healing, statuses, KOs and other effects immediately before the next monster acts.
+- A defender defeated by the second action disappears at once; the third action may target its newly exposed rear partner. If both center-lane defenders fall, subsequent eligible attacks may damage the trainer's shields **within the same row phase**, with no artificial shield-invulnerability period.
+- Row actions should appear as one brisk coordinated sequence (quick successive motions), **not** twelve long individual cinematic turns.
+- The previous proposal to take one targeting snapshot for a whole row and simultaneously apply damage is **rejected for the first prototype**. Rebalance Execute skill power/MP if sequential retargeting makes it too dominant. Sequential healing naturally accounts for previously applied heals.
+- **Automatic targeting is skill-specific** (e.g. general/random, lane preference, Execute, penetration, splash); no manual target selection. Exact target heuristics, row-Speed aggregation, SPD tie handling and specific ability values remain OPEN.
