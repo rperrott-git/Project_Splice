@@ -151,3 +151,13 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Skills | Rank and rarity are separate | Agreed direction | Unique effects need not be a linear upgrade |
 | DNA | Every splice requires inheritance of donor front OR rear active skill | Agreed | Preserves meaningful tradeoff; future frustration testing needed |
 | Next | Define 20–24 prototype skills with element, row, stat scaling, rank, targeting and MP cost | Planned | Proposals only until reviewed |
+
+## Addendum — 2026-10-08: sequential row resolution
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Combat | Fastest monsters act first **within their team's active row** | Agreed | SPD controls meaningful internal sequencing |
+| Combat | Actions resolve one by one; effects and KOs apply immediately | Agreed | Following monsters can exploit breaches, heals see updated HP |
+| Combat | Dynamic skill-specific targeting before each monster action | Agreed | No manual targeting, predictable tactical differences by move |
+| Combat | Row-wide simultaneous target snapshot/damage resolution | Superseded | Sequential ordering replaces prior testing proposal |
+| Balance | Reassess Execute stacking and damage spikes under sequential retargeting | OPEN | Previous wasted-overkill constraint no longer applies |
+| Prototype | Update Godot code to implement sequential SPD ordering and dynamic targeting | TODO | Current prototype may not implement these latest rules |
