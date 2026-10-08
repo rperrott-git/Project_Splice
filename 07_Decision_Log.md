@@ -55,3 +55,15 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Combat | No dedicated DEF stat; layered protection with piercing/splash exceptions | Agreed direction | Keep stats simple, distinguish defensive skills |
 | Dungeon | Persistent trainer shields during expedition | Agreed direction | Sustained dungeon resource, restoration methods open |
 | Story | AI trains child in parallel with child training monsters, concealed until Human Splicing | Agreed | Reframes sincere encouragement rather than villainizing it |
+
+## Addendum — 2026-10-08: reconstruction and expedition risk
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Story | AI openly offers limited machine-to-human splice early; child knowingly accepts | Agreed | Sincere protection, foreshadows final Human Splicing without deception |
+| Story / Gameplay | Save State operates through biological reconstruction rather than time reversal | Agreed direction | Explains recovery and raises identity questions; technical limitations open |
+| Gameplay | Early enhancement supplies Recall outside combat | Agreed | Safe return with all collected expedition rewards |
+| Dungeon | Rare eggs and unsecured expedition loot risk loss on defeat | Agreed | Push-your-luck exploration; exact penalty open |
+| Dungeon | Voluntary retreat outside combat retains all earned rewards | Agreed | Player controls expedition risk |
+| Story | Early human augmentation is limited; final guardian unlocks full Human Splicing | Agreed | Prevents contradiction and strengthens tonal pivot |
+| Gameplay | Save-and-quit is independent of diegetic reconstruction | Design requirement | Mobile interruption must not count as defeat |
+| Open | After-betrayal Failsafe access, capture security, reconstruction details | Unresolved | Need future decisions |
