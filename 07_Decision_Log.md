@@ -141,3 +141,13 @@ Initial checkpoint: 2026-10-08. 'Agreed' means direct user selection or explicit
 | Ending | Never identify the traits the child changed or removed | Agreed | Keep autonomy, identity, and repeating-the-cycle interpretations open |
 | Ending / Postgame | Familiar AI presence returns; old laboratory becomes warm and lively again | Agreed direction | Emotionally comforting ending and functional postgame hub |
 | Ending | No forced ominous reveal or explanation of whether recreated AI is the original | Agreed | Ambiguity emerges through reflection, not a horror sting |
+
+## Addendum — 2026-10-08: skill framework
+| Area | Decision | Status | Rationale / caveat |
+|---|---|---|---|
+| Skills | Different ranks are independent moves, not automatic upgrades | Agreed | Low-MP abilities can remain valuable despite higher-rank donors |
+| Skills | Greater rank generally increases power/effect at higher MP costs | Agreed direction | Exact rank/efficiency curve OPEN |
+| Skills | All four elements and both rows can use ATK- or WIS-scaling abilities | Agreed | Support physical glass cannons, mages and hybrid builds |
+| Skills | Rank and rarity are separate | Agreed direction | Unique effects need not be a linear upgrade |
+| DNA | Every splice requires inheritance of donor front OR rear active skill | Agreed | Preserves meaningful tradeoff; future frustration testing needed |
+| Next | Define 20–24 prototype skills with element, row, stat scaling, rank, targeting and MP cost | Planned | Proposals only until reviewed |
