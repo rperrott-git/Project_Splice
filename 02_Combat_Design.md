@@ -49,3 +49,13 @@ Poison (HP damage), Sleep (no acting), Blind (accuracy penalty), Silence (no MP-
 - Passive trigger order, MP spend/recovery timing, CC duration.
 - How arena rotation and sprite facing communicate active sides.
 - Verify round time and first-strike damage in playtests.
+
+## Center-lane shields and guild licenses — AGREED 2026-10-08
+- **Only the center lane** of the currently selected side can expose the trainer's shields. Both its front-middle and rear-middle monsters must be defeated before ordinary attacks can hit the trainer. Missing corner defenders do not directly open shield access even though a corner is shared by two elements.
+- Front-to-rear lane protection applies to **all three lanes**; losing a front defender exposes only the rear monster in that lane. Corner losses can still reduce offense and leave rear corner specialists vulnerable.
+- No post-hit immunity/protection window: repeated successful attacks on an exposed trainer may each remove a shield. Exact attack-to-shield rules and encounter balance remain to test.
+- **Guild license** controls maximum number of monsters assigned to a formation and maximum trainer shields; higher licenses raise both. Starting at roughly 3–5 monsters and scaling toward 16, and an eventual ~10 shields, are **provisional examples, not fixed tiers**.
+- **No placement restrictions:** all 16 positions are available from the start even when license capacity is low. Empty sides and empty middle lanes are permitted strategic choices, with their natural risks.
+- Specializing heavily in one element is permitted rather than prevented by composition limits. Weaknesses include low access to other elemental functions, diminished opportunities for inactive MP recovery, and vulnerability when an unprotected side is selected. Playtest whether these costs are sufficient.
+- **Shield persistence between dungeon encounters** is the preferred direction agreed for design; recovery facilities, items, and details remain open.
+- The basic stat prototype retains HP/MP/ATK/WIS/SPD without dedicated DEF (agreed direction); physical/magical formulas are untested. Full frontline protection with piercing/splash exceptions is the agreed direction.
