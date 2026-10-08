@@ -25,3 +25,6 @@ Exact control layout, engine implementation details, roster size, length, access
 
 ## License-based formation growth — AGREED 2026-10-08
 Guild licenses increase the number of monsters the protagonist can command **and** maximum trainer shields. All 16 formation positions remain available at every license tier; choosing to concentrate creatures on only one or two sides is permitted. Examples of 3–5 starting monsters and ~10 shields at mastery are balance hypotheses, not final values. Deeper dungeons should naturally challenge single-element burst strategies through MP exhaustion, limited healing, and exposure from empty sides.
+
+## Monster development direction — 2026-10-08
+Long-term development uses a **visible evolution meter filled by splicing**, where more evolved/genetically compatible DNA generally advances progress faster. Monsters undergo around 2–3 increasingly significant evolutions, chosen during a splice; new evolved forms persist across subsequent level resets and can improve innate stat-growth grades. Extraction has no minimum level; recipients must meet a consistent minimum level to splice. Preserve unrestricted reusable archive DNA for initial tests; exact inheritance of acquired traits from extracted developed monsters remains deliberately undecided.
