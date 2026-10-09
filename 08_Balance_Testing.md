@@ -91,3 +91,28 @@ Tested two revised Water/Wind variants, using v0.5 rules and aggregate stat budg
 - **Result:** each variant went 0 wins / 32 runs versus Fire/Wind and 0 / 32 versus Earth/Water, in **both** early and mid tiers (256 total, no time-limit draws).
 - **Interpretation:** corrected status availability alone did not improve outcomes in this v0.5-derived test. This does **not** justify balance changes yet: some powerful high-rank effects are still present in the early tier; enemy rosters, relative unit roles, single-turn policy, control effect eligibility, and targeting are not proven fair. In particular, each assigned status skill's chance, live target selection and actual casts must be inspected before deciding whether control is ineffective or the simulator's side selection is at fault.
 - Next: instrument combat events (ability used, hit/apply counts, enemy actions denied, wasted healing, net MP, center lane pressure), verify tactical policy and skill-slot legality. Consider true deterministic counterfactuals on identical encounter states.
+
+## Instrumented Water/Wind diagnostics v0.7 — 2026-10-08
+
+Reran **256** v0.6 corrected-loadout battles (Balanced and Control variants; Fire/Wind and Earth/Water opponents; early/mid; 16 seeds, both sides swapped) with event counters for skill casts, status attempts/successes, Sleep actions denied, effective/overheal amount, MP restoration, skill expenditures and center shield hits. Exported detailed CSVs and a limited per-action trace. No mechanics or numerical balance altered.
+
+**All eight comparisons still had 0 Water/Wind wins out of 32.** In this fixture, neither variant caused a trainer shield hit, and their opponents registered six hits per battle.
+
+Aggregated per Water/Wind battle:
+| Signal | Balanced | Control |
+|---|---:|---:|
+| Sleeping Mist casts | 2.88 | 6.25 |
+| Successful Sleep applications | 3.45 | 8.64 |
+| Successful Heal Block applications | 1.45 | 2.06 |
+| Successful Poison applications | 2.84 | 3.03 |
+| Effective HP healed | 80.3 | 90.94 |
+| Healing capacity unused due to full HP or overheal | 66.9 | 70.1 |
+| MP restored by skills | 85.3 | 92.4 |
+| MP spent on skills | 363.1 | 422.6 |
+| Trainer shield hits | 0 | 0 |
+
+Additional actual **enemy actions denied by Sleep**: against Fire/Wind, 1.50 per Balanced battle / 4.59 per Control; against Earth/Water, 2.47 / 7.41. Sleep is being cast and prevents actions, contrary to the initial concern that Wind skills were never activating; a lot of additional applications refresh Sleep, hit enemies that don't act again or are removed by damage, so raw status applications must not be equated to actions denied.
+
+**Takeaway:** v0.6's roster bug was corrected, but statuses actually trigger; the team lacks center-lane shield pressure. This is not yet evidence that Water/Wind is inherently weak. Targeting and formation openings, heal-use efficiency, comparison policy and **win-by-center-shield** must be scrutinized. Status numeric balance unchanged. Note diagnostic early-tier retained some B-rank skills and is not a faithful early-game test.
+
+**Important implementation caveat:** This is still a simplified model; e.g. simulation win condition is shield-based, skill heuristics are crude and some skill families do not handle all the intended target semantics. Keep results experimental.
