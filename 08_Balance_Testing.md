@@ -116,3 +116,22 @@ Additional actual **enemy actions denied by Sleep**: against Fire/Wind, 1.50 per
 **Takeaway:** v0.6's roster bug was corrected, but statuses actually trigger; the team lacks center-lane shield pressure. This is not yet evidence that Water/Wind is inherently weak. Targeting and formation openings, heal-use efficiency, comparison policy and **win-by-center-shield** must be scrutinized. Status numeric balance unchanged. Note diagnostic early-tier retained some B-rank skills and is not a faithful early-game test.
 
 **Important implementation caveat:** This is still a simplified model; e.g. simulation win condition is shield-based, skill heuristics are crude and some skill families do not handle all the intended target semantics. Keep results experimental.
+
+## v0.8: two-turn planning and five-encounter expeditions (2026-10-08)
+
+An experimental executable Python script `project_splice_sim_v08.py` and its generated `project_splice_sim_v08_engine.py` were produced, with CSVs `Project_Splice_Expeditions_v0.8.csv` (encounters) and `Project_Splice_Expedition_Summary_v0.8.csv` (aggregates). Sources/results are downloadable from that ChatGPT conversation; these files are **not** in the repository.
+
+**Test design:** Four archetypes (pure offense, Wind setup + Fire payoff, four-element balance, Earth/Water endurance); 16 assigned monsters/team with matching aggregate stat budgets per tier inherited from v0.5; early/mid tier; 12 seeded expeditions per variant; five fights (three wild, one elite, one trainer). Wild win requires KO of all six wild foes; trainer win by shields. Player HP/MP/KO and shield counts persist across encounters. Opponents use fixed elemental side; test player has heuristic two-step action-value scoring, Wind-setup bonus, and policy-specific directional biases. This is **not** an actual two-ply battle-state simulator or expert side AI. 22-round cap per fight; hitting time cap counts as noncompletion. Status and targeting fidelity still approximate.
+
+**Both original and lowered-difficulty tests:** The initial opponent setup produced 0/12 expedition completions for every archetype/tier; calibrated foes had 0.68x HP and 0.70x ATK/WIS (these are arbitrary diagnostic difficulty multipliers, not progression recommendations).
+
+| Strategy | Calibrated early expedition completions /12 | Calibrated midgame /12 |
+|---|---:|---:|
+| Pure offense | 1 | 0 |
+| Wind setup/Fire burst | 0 | 1 |
+| Balanced all four | 12 | 12 |
+| Defensive endurance | 12 | 12 |
+
+**Interpretation:** Multi-encounter recovery/replenishment matters dramatically under current HP/MP persistence, and wind setups did not translate into reliable expedition completion in this fixture. But **not evidence of true meta**: encounter tuning severely favors recovery, all teams' opponents were fixed-side AI, Wind/Fire loadout can be poor, staged wild opponents are reconstituted from same-level individual species without equal encounter budget, special target fidelity incomplete, and the lookahead estimates utility rather than simulates two actual turns. Strong results for sustain may reflect a fixture advantage; never change canonical combat rules based solely on these scores.
+
+**Next test priority:** Before tuning skills, instrument **element choices per turn**, actual Wind→Fire transitions, status effect follow-up damage, healing/MP efficiencies, and center-lane damage per side. Compare controlled ablations *within the same formation* (Wind enabled/disabled, passive restore on/off), evaluate intelligent enemy choice, and calibrate expedition difficulty to a non-trivial completion range (not 0% or 100%). Consider explicit rules for inter-battle recovery and trainer shields.
